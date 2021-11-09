@@ -1,0 +1,5 @@
+@include govuk-exports("govuk/component/hide-this-page") {
+  .govuk-hide-this-page {
+    display: block;
+  }
+}

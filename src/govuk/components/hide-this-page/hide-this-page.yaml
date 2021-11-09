@@ -1,0 +1,8 @@
+params:
+- name: text
+  type: string
+  required: true
+  description: Text
+
+examples:
+- name: default
