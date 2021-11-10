@@ -25,4 +25,6 @@ params:
   description: HTML attributes (for example data attributes) to add to the hide this page container.
 
 examples:
-- name: default
+- name: default  
+  data:
+    text: Hide this page
