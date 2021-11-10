@@ -12,6 +12,12 @@
 {% else %}
   {% set newTabURL = "http://bbc.co.uk/weather" %}
 {% endif %}
+{# Set the text of the button (defaults to 'Hide this page') #}
+{%- if params.text %}
+  {% set text = params.text %}
+{% else %}
+  {% set text = "Hide this page" %}
+{% endif %}
 <div {%- if params.id %} id="{{ params.id }}"{% endif %} class="govuk-hide-this-page {%- if params.classes %} {{ params.classes }}{% endif %}"
 {%- for attribute, value in params.attributes %} {{attribute}}="{{value}}"{% endfor %}>
   <script>
@@ -21,7 +27,7 @@
   </script>
   <div class="govuk-hide-this-page__position">
     {{ govukButton({
-      text: "Hide this page",
+      text: text,
       classes: "govuk-button--warning",
       href: currentTabURL,
       attributes: {

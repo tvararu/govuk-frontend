@@ -1,4 +1,16 @@
 params:
+- name: text
+  type: string
+  required: false
+  description: Text for the link. Defaults to `Hide this page`.
+- name: currentTabURL
+  type: string
+  required: false
+  description: URL to redirect the current tab to. Defaults to `http://www.google.com`.
+- name: newTabURL
+  type: string
+  required: false
+  description: URL to open a new tab to. Defaults to `http://bbc.co.uk/weather`.
 - name: id
   type: string
   required: false
