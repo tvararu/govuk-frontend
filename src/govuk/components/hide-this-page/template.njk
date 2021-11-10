@@ -1,26 +1,14 @@
-<!-- Code sits above the 'skip to main content' <div> to warn users that this feature exists on the page -->
-<div class="govuk-hide-this-page__container govuk-visually-hidden">
-  <p class="govuk-body">
-    To leave the page quickly, press the escape key.
-  </p>
-</div>
-
 <script>
   function hideThisPage() {
       window.open("http://bbc.co.uk/weather", "_newtab");
   }
 </script>
 
-<!-- Code used for the component and sits inside the <main> content wrapper -->
 <div class="govuk-hide-this-page__container govuk-hide-this-page__enabled">
   <div class="govuk-hide-this-page__position">
     <a href="http://www.google.com" onclick="hideThisPage()" class="govuk-button govuk-button--warning govuk-hide-this-page">
       <strong>Hide this page</strong>
-      <span class="govuk-visually-hidden">Or press escape key to hide this page</span>
     </a>
-    <p class="govuk-body govuk-hide-this-page--info govuk-!-font-size-14">
-      (Or press Esc key)
-    </p>
   </div>
   <p class="govuk-button govuk-hide-this-page__iesizing">
     <strong>Hide this page</strong>

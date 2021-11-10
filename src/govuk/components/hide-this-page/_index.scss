@@ -25,14 +25,6 @@
         width: 100%;
         margin-bottom: 0;
       }
-
-      .govuk-hide-this-page--info {
-        margin: 0;
-        padding: 10px 0;
-        border: 1px $govuk-border-colour solid;
-        border-top-style: none;
-        text-align: center;
-      }
     }
   }
 
@@ -79,11 +71,6 @@
       .govuk-hide-this-page__sizing {
         display: none;
       }
-    }
-  }
-  @media only screen and (hover: none) {
-    .laa-hide-this-page-info {
-      display: none;
     }
   }
 
