@@ -1,3 +1,5 @@
+{% from "../button/macro.njk" import govukButton %}
+
 {# Set the URL of the current tab (defaults to Google) #}
 {%- if params.currentTabURL %}
   {% set currentTabURL = params.currentTabURL %}
@@ -18,8 +20,13 @@
     }
   </script>
   <div class="govuk-hide-this-page__position">
-    <a href="{{currentTabURL}}" onclick="govukHideThisPage()" class="govuk-button govuk-button--warning govuk-hide-this-page">
-      <strong>Hide this page</strong>
-    </a>
+    {{ govukButton({
+      text: "Hide this page",
+      classes: "govuk-button--warning",
+      href: currentTabURL,
+      attributes: {
+        onclick: "govukHideThisPage()"
+      }
+    }) }}
   </div>
 </div>

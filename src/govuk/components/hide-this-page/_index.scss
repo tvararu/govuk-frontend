@@ -1,3 +1,5 @@
+@import "../button/index";
+
 @include govuk-exports("govuk/component/hide-this-page") {
   @media only screen {
     .govuk-hide-this-page {
