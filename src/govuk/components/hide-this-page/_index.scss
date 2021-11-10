@@ -1,10 +1,6 @@
 @include govuk-exports("govuk/component/hide-this-page") {
   @media only screen {
-    .js-enabled .govuk-hide-this-page__container.govuk-visually-hidden {
-      display: block;
-    }
-
-    .govuk-hide-this-page__container.govuk-hide-this-page__enabled {
+    .govuk-hide-this-page {
       display: block;
       position: -webkit-sticky;
       position: sticky;
@@ -45,20 +41,7 @@
       display: none;
     }
 
-    .js-enabled .govuk-hide-this-page__container.govuk-visually-hidden {
-      display: block;
-
-      ~.gem-c-cookie-banner__confirmation,
-      .gem-c-cookie-banner {
-        padding-top: 40px;
-      }
-
-      ~.skiplink-container {
-        padding-top: 40px;
-      }
-    }
-
-    .govuk-hide-this-page__container.govuk-hide-this-page__enabled {
+    .govuk-hide-this-page {
       float: none;
 
       .govuk-hide-this-page__position {
@@ -72,9 +55,5 @@
         display: none;
       }
     }
-  }
-
-  .govuk-hide-this-page__container {
-    display: none;
   }
 }

@@ -1,8 +1,16 @@
 params:
-- name: text
+- name: id
   type: string
-  required: true
-  description: Text
+  required: false
+  description: ID attribute to add to the hide this page container.
+- name: classes
+  type: string
+  required: false
+  description: Classes to add to the hide this page container.
+- name: attributes
+  type: object
+  required: false
+  description: HTML attributes (for example data attributes) to add to the hide this page container.
 
 examples:
 - name: default
