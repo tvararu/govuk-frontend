@@ -217,15 +217,6 @@ gulp.task('js:compile', (done) => {
           // UMD allows the published bundle to work in CommonJS and in the browser.
           format: 'umd'
         },
-        {
-          // Used to set the `window` global and UMD/AMD export name
-          // Component JavaScript is given a unique name to aid individual imports, e.g GOVUKFrontend.Accordion
-          name: moduleName,
-          // UMD allows the published bundle to work in CommonJS and in the browser.
-          format: 'es',
-          // Add an esm JS file
-          file: path.parse(file).name + '.esm.js'
-        }
       ]))
       .pipe(gulpif(isDist, uglify({
         ie8: true

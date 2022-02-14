@@ -74,7 +74,8 @@ gulp.task('dev', gulp.series(
 gulp.task('build:package', gulp.series(
   'clean',
   'copy-files',
-  'js:compile'
+  'js:compile',
+  'js:copysrc'
 ))
 gulp.task('build:dist', gulp.series(
   'clean',

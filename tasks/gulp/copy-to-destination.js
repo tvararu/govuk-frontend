@@ -52,6 +52,14 @@ gulp.task('copy-files', () => {
     .pipe(gulp.dest(taskArguments.destination + '/govuk/'))
 })
 
+gulp.task("js:copysrc", () => {
+  return gulp.src([configPaths.src + '**/*.js', '!' + configPaths.src + '/**/*.test.js'])
+    .pipe(rename(path => {
+      path.extname = '.mjs'
+    }))
+    .pipe(gulp.dest(taskArguments.destination + '/govuk/'))
+})
+
 function generateFixtures (file) {
   const json = convertYamlToJson(file)
   const componentName = path.dirname(file.path).split(path.sep).slice(-1).toString()
