@@ -25,6 +25,7 @@
     "lint:scss": "stylelint 'app/**/*.scss' 'src/**/*.scss'"
   },
   "devDependencies": {
+    "@percy/cli": "^1.0.0-beta.75",
     "acorn": "^7.4.0",
     "autoprefixer": "^9.8.6",
     "body-parser": "^1.18.3",
