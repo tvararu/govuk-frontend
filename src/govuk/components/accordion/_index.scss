@@ -22,7 +22,7 @@
   }
 
   .govuk-accordion__section-button {
-    @include govuk-font($size: 24, $weight: bold);
+    @include govuk-font($size: 27, $weight: bold);
     @include govuk-text-colour;
 
     display: block;
